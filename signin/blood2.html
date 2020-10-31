@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+.container {
+    padding: 50px;
+  background-color: Lightblue;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<form action="thank.html">
+  <div class="container">
+  <center>  <h1>Blood Recipient Form</h1> </center>
+  <hr>
+  <div id="form-wrapper" style="max-width:500px;margin:auto;">
+  <label> Patient's Name</label> 
+<input type="text" name="firstname" placeholder= "Name" size="10" required /> 
+<label> Age: </label> 
+<input type="text" name="middlename" placeholder="Age" size="15" required /> 
+<label> Weight: </label>  
+<input type="text" name="lastname" placeholder="Weight" size="15"required /> 
+
+<label> 
+Blood group Required :
+</label> 
+
+<select>
+<option value="Course">---Select---</option>
+<option value="BCA">A+</option>
+<option value="BBA">A-</option>
+<option value="B.Tech">A1+</option>
+<option value="MBA">A1-</option>
+<option value="MCA">A1B+</option>
+<option value="M.Tech">A1B-</option>
+<option value="Course">A2+</option>
+<option value="Course">A2-</option>
+<option value="Course">A2B+</option>
+<option value="Course">A2B-</option>
+<option value="Course">AB+</option>
+<option value="Course">AB-</option>
+<option value="Course">B+</option>
+<option value="Course">B-</option>
+<option value="Course">O+</option>
+<option value="Course">O-</option>
+</select>
+
+ 
+<br><br>
+
+<label>Routine or Emergency: </label>  
+<input type="text" name="lastname" placeholder="Routine/Emergency" size="15"required /> 
+<label>No: of units required: </label>  
+<input type="text" name="lastname" placeholder="In ML/L" size="15"required /> 
+<label> Patient's Registration number/Admin no: </label>  
+<input type="text" name="lastname" placeholder="Regd no:" size="15"required /> 
+<label> Name of the Hospital: </label>  
+<input type="text" name="lastname" placeholder="Hospital name" size="15"required /> 
+Dated  :  <input type="date"><br><br>
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender"> Male 
+<input type="radio" value="Female" name="gender"> Female 
+<input type="radio" value="Other" name="gender"> Other
+
+
+
+<label> <br><br>
+Phone :
+</label>
+<input type="text" name="number" placeholder="Valid number"   pattern="[0-9]{10}" required/> 
+<label> Name of the referring doctor: </label>  
+<input type="text" name="lastname" placeholder="Doctor's name" size="15"required>
+Address of the Hospital :
+<textarea cols="80" rows="5" placeholder="Hospital Address" value="address" required></textarea>
+  <button type="submit" class="registerbtn">Submit</button>  
+</div>
+
+</form>  
+</body>  
+</html>  

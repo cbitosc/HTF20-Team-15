@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+ 
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: Lightblue;
+}
+.container {
+   
+  background-color: Lightblue;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  text-align: left;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<form action="thank.html">
+  <div class="container">
+  <center>  <h1> Blood Donor Form</h1> </center>
+  <hr>
+  <div id="form-wrapper" style="max-width:500px;margin:auto;">
+  <label> Firstname </label> 
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required /> 
+<label> Lastname: </label> 
+<input type="text" name="lastname" placeholder="Lastname" size="15" required /> 
+Date of birth  :  <input type="date"><br><br>
+<label> 
+Blood group  :
+
+
+</label> 
+ 
+<select>
+<option value="Blood group">----Select</option>
+<option value="BCA">A+</option>
+<option value="BBA">A-</option>
+<option value="B.Tech">A1+</option>
+<option value="MBA">A1-</option>
+<option value="MCA">A1B+</option>
+<option value="M.Tech">A1B-</option>
+<option value="BCA">A2+</option>
+<option value="BCA">A2-</option>
+<option value="BCA">A2B+</option>
+<option value="BCA">A2B-</option>
+<option value="BCA">AB+</option>
+<option value="BCA">AB-</option>
+<option value="BCA">B+</option>
+<option value="BCA">B-</option>
+<option value="BCA">O+</option>
+<option value="BCA">O-</option>
+</select>
+<br><br>
+Last donate date  : <input type="date"><br><br>
+
+
+<label>
+
+
+Gender :
+</label><br>
+<input type="radio" value="Male" name="gender"> Male 
+<input type="radio" value="Female" name="gender"> Female 
+<input type="radio" value="Other" name="gender"> Other
+
+
+<label> <br><br>
+Phone :
+</label>
+<input type="text" name="number" placeholder="Valid number"   pattern="[0-9]{10}" required/> 
+
+Current Address :
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>  
+<button type="submit" class="registerbtn">Submit</button>  
+ </div>
+
+</form>  
+</body>  
+</html>  
