@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+ 
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: Lightblue;
+}
+.container {
+   
+  background-color: Lightblue;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  text-align: left;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+    <form action="thank.html">
+        <div class="container">
+        <center>  <h1> Advertise Form</h1> </center>
+        <hr>
+        <div id="form-wrapper" style="max-width:500px;margin:auto;">
+             
+             <label for="fname">*Full name:</label><br><br>
+             <input type="text" id="fullname" name="fullname" placeholder="Your full name" required><br><br>
+             <label for="oname">*Organization name:</label><br><br>
+             <input type="text" id="oname" name="oname" placeholder="Organization name" required><br><br>
+             <label for="email">Email:</label><br><br>
+             <input type="email" id="email" name="email"placeholder="E-mail ID" size=50><br><br>
+             <label for="phone">*Phone number:</label><br><br>
+             <input type="tel" id="phone" name="phone" placeholder="Valid number" pattern="[0-9]{10}" required><br><br>
+             <label for="campstartdate">*Camp Start Date:</label><br><br>
+             <input type="date" id="campstartdate" name="campstartdate"required><br><br>
+             <label for="campenddate">*Camp End Date:</label><br><br>
+             <input type="date" id="campenddate" name="campenddate"required><br><br>
+            
+             <label for="myfile">*Please upload documentation of your camp</label><br><br>
+             <input type="file" id="myfile" name="myfile" required><br><br>
+             
+            
+             <button class="button button1">Submit</button><br>
+            </fieldset>
+           </form>
+</body>  
+</html>  

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Donor Recipient Form</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form action="excel.xlsx" method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Blood Recipient Form</h2>
+                        <div class="form-group">
+                            <label> Patient's Name</label> 
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Patient's Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label> Age: </label> 
+                            <input type="text" class="form-input" name="Age" id="Age "placeholder="Age"/>
+                        </div>
+                        <div class="form-group">
+                            <label> Height: </label>  
+                            <input type="text" class="form-input" name="Height" id="Height"placeholder="in cm"/>
+                        </div>
+                        <div class="form-group">
+                            <label> Weight: </label>  
+                            <input type="text" class="form-input" name="Weight" id="Weight "placeholder="in Kg"/>
+                        </div>
+                        <div class="form-group"><label> 
+                                Blood group Required :
+                                </label>  <select>
+                                <option value="Course">---Select---</option>
+                                <option value="BCA">A+</option>
+                                <option value="BBA">A-</option>
+                                <option value="B.Tech">A1+</option>
+                                <option value="MBA">A1-</option>
+                                <option value="MCA">A1B+</option>
+                                <option value="M.Tech">A1B-</option>
+                                <option value="Course">A2+</option>
+                                <option value="Course">A2-</option>
+                                <option value="Course">A2B+</option>
+                                <option value="Course">A2B-</option>
+                                <option value="Course">AB+</option>
+                                <option value="Course">AB-</option>
+                                <option value="Course">B+</option>
+                                <option value="Course">B-</option>
+                                <option value="Course">O+</option>
+                                <option value="Course">O-</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Routine or Emergency: </label>  
+                            <input type="text" class="form-input" name="purpose" id="purpose "placeholder="Routine/Emergency"/>
+                        </div>
+                        <div class="form-group">
+                            <label>No: of units required: </label> 
+                            <input type="text" class="form-input" name="required" id="required"placeholder=" ML/L"/>
+                        </div>
+                        <div class="form-group">
+                            <label> Patient's Registration number/Admin no: </label> 
+                            <input type="text"class="form-input"  name="Regd no" placeholder="Regd no:" size="15"required /> 
+                        </div>
+                        <div class="form-group">
+                            <label> Name of the Hospital: </label> 
+                            <input type="text" class="form-input" name="Hospital name"placeholder="Hospital name" size="15"required />
+                        </div>
+                        <div class="form-group">
+                            <label> Date: </label> 
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label> Gender:</label> 
+                            <br>
+                            <input type="radio" value="Male" name="gender"> Male 
+                            <input type="radio" value="Female" name="gender"> Female 
+                            <input type="radio" value="Other" name="gender"> Other
+                            
+                        </div>
+                        <div class="form-group">
+                            <label> 
+                                Phone :
+                                </label>
+                            <input type="text" class="form-input" name="phone" id="phone"placeholder="phone"/>
+                        </div>
+                        <div class="form-group">
+                            <label> Name of the referring doctor: </label> 
+                            <input type="text" class="form-input" name="lastname" placeholder="Doctor's name" size="15"required>
+                        </div>
+                        <div class="form-group">
+                            Address of the Hospital :
+                             <input type="text" class="form-input" name="lastname"  placeholder="Hospital Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Submit"/>
+                        </div>
+                    </form>
+                  
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
